@@ -1,0 +1,41 @@
+#section-cep {
+  padding-bottom: 5rem;
+  border-bottom: 2px solid gold;
+}
+#container-cep {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 2.5rem;
+}
+#cep {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  gap: 2rem;
+  color: white;
+}
+#cep input {
+  width: 15rem;
+  text-align: center;
+  color: black;
+  border-radius: .5rem;
+}
+#cep svg {
+  font-size: 4rem;
+  color: gold;
+  cursor: pointer;
+}
+#frete {
+  color: white;
+}
+#cidade {
+  color: white;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  height: 2.5rem;
+}
+#cidade.erro {
+  color: red;
+}

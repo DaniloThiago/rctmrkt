@@ -1,0 +1,71 @@
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border: .2rem solid black;
+  border-radius: .5rem;
+  cursor: pointer;
+  width: 35rem;
+  min-width: 35rem;
+  overflow: hidden;
+}
+.item-card:hover {
+  border: .2rem solid gold;
+  box-shadow: .5rem .5rem 1rem .1rem grey;
+}
+.item-card h2 {
+  z-index: 2;
+  background: white;
+}
+.item-card .item-card-image {
+  max-height: 20rem;
+  margin: 2rem;
+  width: max-content;
+  align-self: center;
+  transition: all .2s ease-in-out;
+  z-index: 1;
+}
+.item-card:hover .item-card-image {
+  transform: scale(1.15)
+}
+.item-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.item-card-footer > p {
+  font-size: 1.8rem;
+}
+.item-card-footer > p > b {
+  font-weight: bold;
+}
+.item-card-footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: gold;
+  border-radius: 0.5rem;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.item-card-footer button svg {
+  margin-right: .5rem;
+  font-size: 1.7rem;
+}
+.item-popup-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  zIndex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3
+}

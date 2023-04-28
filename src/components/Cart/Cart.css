@@ -1,0 +1,89 @@
+.cart {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  z-index: 2;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cart > svg {
+  color: white;
+}
+.cart  h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid gold;
+}
+.cart h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+.cart > .cart-right h2 {
+  padding-top: 2rem;
+  color: white;
+}
+.cart > svg {
+  cursor: pointer;
+  float: right;
+  margin: 1rem;
+  position: absolute;
+  right: 0;
+}
+.cart.open {
+  transform: translateX(0%);
+}
+.cart-left, .cart-right {
+  width: 50vw;
+  height: 100vh;
+  padding: 5rem;
+  color: gold;
+  overflow: auto;
+}
+.cart-left {
+  background: white;
+  width: 50vw;
+  color: black;
+}
+.cart button {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 1rem;
+  border-radius: .5rem;
+  background: gold;
+  color: black;
+  font-size: 4rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+.cart button svg {
+  color: black;
+}
+.line {
+  font-size: 2.5rem;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  color: white;
+  padding-top: 2rem;
+}
+#total {
+  margin-top: 2rem;
+  border-top: 2px solid gold;
+}
